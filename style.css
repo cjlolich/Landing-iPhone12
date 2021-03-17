@@ -1,0 +1,502 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face{
+  font-family: "SF UI Display";
+  src: url("fonts/sf-ui-display-medium-58646be638f96.otf");
+}
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'SF UI Display';
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav {
+  background-color: #111113;
+  height: 50px;
+
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+
+li {
+  list-style: none;
+  justify-content: center;
+}
+
+.logo-mac {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: #C2C2C2;
+}
+
+.menu li > a:hover {
+  color: #fff;
+}
+.logo-mac {
+  background-image: url('../../en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg');
+  color: #C2C2C2;
+}
+
+.aclarathion {
+  text-align: center;
+}
+.aclarathion-item-1, .aclarathion-item-2 {
+  padding-top: 2px;
+  background-color: #272723;
+  color: #F2F2F2;
+  height: 20px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: end;
+}
+.aclarathion-item-2 {
+  width: 40%;
+    text-align: start;
+}
+
+.aclarathion-a {
+  color: #0077ED; 
+}
+
+.aclarathion-a:hover {
+  border-bottom: solid 2px #0077ED;
+  color: #0077ED; 
+}
+
+.content-aclarathion {
+  text-align: center;
+}
+
+/* ----- SECTION HOME ----- */
+.home {
+  background-color: #F2F2F2;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.product {
+  font-size: 24px;
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+.home h2 {
+  font-size: 48px;
+  font-weight: lighter;
+  margin: 10px;
+}
+
+.home img {
+  width: 40%;
+  height: 40%;
+  margin-bottom: 100px;
+}
+
+.buy-product {
+  display: inline;
+}
+
+.buy-product span {
+  font-size: 24px;
+}
+
+
+.content-product-button-buy {
+  margin: 20px 0;
+}
+.content-product-button-buy a {
+  background: #0077ED;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+.product-word .nota {
+  color: #000;
+}
+
+
+/* ----- SECTION BUY ----- */
+.buy {
+  background-color: #000000;
+  width: 100%;
+}
+
+.content-word {
+  padding: 150px 0px 80px 0px;
+  color: #F2F2F2;
+}
+
+.content-word span {
+  font-size: 24px;
+}
+
+.content-word h4 {
+  font-size: 48px;
+  margin: 10px;
+}
+
+.buy-note {
+  display: inline;
+}
+
+.content-word-button-buy {
+  margin: 50px 0;
+}
+.content-word-button-buy a {
+  background: #0077ED;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+.content-learn-more {
+  margin: 20px;
+}
+
+.content-learn-more a {
+  margin-right: 0;
+}
+
+.content-word-learn-more:hover {
+  border-bottom: solid 2px #0077ED;
+}
+
+.fa-chevron-right {
+  margin: 0 10px;
+}
+
+.content-word-learn-more {
+  color: #0077ED;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.buy-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buy-image img  {
+  width: 60%;
+  height: 80%;
+  margin-bottom: 100px;
+}
+
+i {
+  color: #0077ED;
+  margin-left: -20px;
+}
+
+/* ----- SECTION COMPARATION ----- */
+.comparation {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  color: #000000;
+  margin-top: 100px;
+}
+
+.comparation-text {
+  margin: 20px;
+}
+
+.comparation-text a {
+  margin-right: 0;
+}
+
+.comparation-text:hover {
+  border-bottom: solid 2px #0077ED;
+}
+
+.fa-chevron-right {
+  margin: 0 10px;
+}
+
+.comparation-text a {
+  color: #0077ED;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.grid-container-comparation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+  "iphone-12-pro-device iphone-12-device iphone-se-device iphone-11-device" "iphone-12-pro-display iphone-12-display iphone-se-display iphone-11-display" "iphone-12-pro-cellular iphone-12-cellular iphone-se-cellular iphone-11-cellular" "iphone-12-pro-chip iphone-12-chip iphone-se-chip iphone-11-chip" "iphone-12-pro-camera iphone-12-camera iphone-se-camera iphone-11-camera" "iphone-12-pro-lidar iphone-12-lidar iphone-se-lidar iphone-11-lidar" "iphone-12-pro-magsafe iphone-12-magsafe iphone-se-magsafe iphone-11-magsafe" "iphone-12-pro-buy iphone-12-buy iphone-se-buy iphone-11-buy";
+}
+
+.grid-container-comparation img {
+  width: auto;
+  height: 50%;
+  margin: 20px 20px;
+}
+
+.iPhone-SE {
+  border: solid 1px #111113;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.colors-mobiles {
+  width: 3vw;
+  height: 3vh;
+  max-width:20%;
+  max-height: 20%;
+  justify-content: center;
+}
+
+
+
+/* ----- ACCESORIES ----- */
+.accesories {
+  background-color: #F2F2F2;
+  width: 100%;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.accesories h2 {
+  font-size: 56px;
+  margin: 0;
+  padding: 100px 0 50px 0;
+  text-align: center;
+  font-weight: 400;
+  line-height: 60px;
+  color: #1d1d1f;
+}
+
+.content-accesories {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.magsafe-text h4, .airPods h4 {
+  font-size: 48px;
+  /* padding: 50px 0 50px 0; */
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 52px;
+  color: #1d1d1f;
+  display: block;
+}
+
+.magsafe, .airPods {
+  background-color: #fff;
+  padding: 50px 10px;
+  color: #000;
+  margin: 0 auto 10px;
+  width: 50%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.magsafe-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+.magsafe-text span {
+  font-size: 18px;
+}
+
+
+.magsafe-content {
+  color: #0077ED;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.magsafe-content a {
+  margin-right: 0;
+  color: #0077ED;
+}
+
+.magsafe-shop-a:hover {
+  border-bottom: solid 2px #0077ED;
+}
+
+.fa-chevron-right {
+  margin: 0 10px;
+}
+
+.magsafe-shop-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.magsafe-shop-img img  {
+  margin-bottom: 100px;
+  width: 90%;
+  height: 75%;
+}
+
+i {
+  color: #0077ED;
+  margin-left: -20px;
+}
+
+.airPods {
+  position: relative;
+}
+
+.airPods-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+
+.airPods-img {
+  /* position: absolute; */
+  top: 250px;
+  /* display: flex; */
+  justify-content: flex-start;
+}
+
+.airPods-img img {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 75%;
+  display: block;
+}
+
+.airPods-shop-more {
+  display: flex;
+  justify-content: space-around;
+}
+
+.airPods-a-learn, .airPods-a-shop {
+  margin-right: 0;
+  color: #0077ED;
+}
+
+.airPods-a-learn:hover, .airPods-a-shop:hover {
+  border-bottom: solid 2px #0077ED;
+}
+
+
+/* ----- ALL ACCESORIES ----- */
+.all-accesories {
+  display: block;
+  overflow: hidden;
+  padding-top: 83px;
+  /* margin-bottom: 30px; */
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+
+  width: 80%;
+}
+
+.content-all-accesories {
+  display:flex;
+}
+
+.delivery img, .financing img, .personal img  {
+  display: block;
+  margin: 0 auto;
+}
+
+.delivery span, .financing span, .personal span  {
+  font-size: 21px;
+  font-weight: bold;
+  color: #1d1d1f;
+}
+
+.delivery p, .financing p, .personal p  {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #1d1d1f;
+  margin: 10px 40px 30px 40px;
+}
+
+.delivery, .financing, .personal {
+  margin-bottom: 100px;
+
+}
+
+.all-accesories-buy {
+  margin: 20px 0 50px 0;
+}
+
+.all-accesories-buy-a {
+  color: #0077ED;
+  font-size: 24px;
+}
+
+.all-accesories-buy-a:hover {
+  border-bottom: solid 2px #0077ED;
+}
+
+.delivery-more, .financing-more, .personal-more {
+  color: #0077ED;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+.delivery-more:hover, .financing-more:hover, .personal-more:hover {
+  border-bottom: solid 2px #0077ED;
+}
+/* ----- FOOTER ----- */
+
+.footer {
+  background-color: #F5F5F7 ;
+  color: #86868b;
+  font-size: 12px;
+}
+
+.content-footer {
+  padding: 25px 15px;
+  text-align: left;
+  line-height: 1.5;
+  display: block; 
+  margin: 0 auto; 
+  margin: 0px 15px;
+}
+
+.footer-reference-a {
+  color: #000 !important;
+}
+
+.footer-ul {
+  text-align: left;
+}
+
+.footer-ul li {
+  text-align: left;
+  
+  /* width: 100%; */
+
+}
